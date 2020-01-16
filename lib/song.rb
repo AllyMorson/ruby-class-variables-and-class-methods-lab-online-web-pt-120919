@@ -24,10 +24,9 @@ class Song
     @@artist.uniq #only contains unique artists - no repeats in the array 
   end 
   
-  def self.genres 
-    self.each do |song| 
-      
-    end 
+  def self.genres
+    @@genres.uniq
+  end
     
     def self.genre_count 
       genre_count = {} 
