@@ -14,6 +14,8 @@ class Song
     @@artists << artist #show all of the artists of existing
   end 
   
+#Now we must call on the class methods to perform the above 
+
   def self.count 
       @@song_count 
     end 
