@@ -5,10 +5,11 @@ class Song
   @@artists = [] #show all of the artists of existing songs
   @@genres = [] #keep track of the number of songs of each genre it creates
   
-  def initialize
+  def initialize (name , artist , genre)
     @@song_count += 1 
-    
-    
+    @artist = artist
+    @genre = genre
+    @name = name
   end 
   
   def self.count 
