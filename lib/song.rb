@@ -3,7 +3,7 @@ class Song
 
   @@count = 0
   @@artists = [] #show all of the artists of existing? songs
-  @@genres = [] #keep track of the number of songs of each genre it creates?
+  @@genres = [] #keep track of the number of songs of each genre it creates? returns an array of all of the genres of existing songs
   
   def initialize (name , artist , genre)
     @@song_count += 1 
@@ -19,7 +19,7 @@ class Song
     end 
     
   def self.artist 
-    @@artist << self
+    @@artist.uniq 
   end 
   
   def self.genres 
