@@ -10,7 +10,8 @@ class Song
     @artist = artist
     @genre = genre
     @name = name
-    @@artist << 
+    @@genres << genre #keep track of the number of songs of each genre it creates
+    @@artists << artist #show all of the artists of existing
   end 
   
   def self.count 
