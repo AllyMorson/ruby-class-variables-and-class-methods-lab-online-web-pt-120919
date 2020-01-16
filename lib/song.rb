@@ -21,7 +21,7 @@ class Song
     end 
     
   def self.artist 
-    @@artist.uniq 
+    @@artist.uniq #only contains unique artists - no repeats in the array 
   end 
   
   def self.genres 
